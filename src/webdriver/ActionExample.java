@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ActionExample {
     public static void main(String[] args) {
         String baseUrl = "http://demo.guru99.com/test/newtours/";
-        System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
+        System.setProperty("web- driver.chrome.driver","/browserDrivers/IEDriverServer.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.get(baseUrl);
