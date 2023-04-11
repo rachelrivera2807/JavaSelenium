@@ -1,4 +1,4 @@
-package com.suite2;
+package main.java.com.suite2;
 
 import java.util.concurrent.TimeUnit;
 

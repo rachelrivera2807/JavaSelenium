@@ -1,4 +1,4 @@
-package webdriver;
+package main.java.webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +14,7 @@ public class RegisterForm {
         WebDriver driver = new ChromeDriver();
         driver.get(baseURL);
         WebElement first_name = driver.findElement(By.cssSelector("[type='text'][placeholder='First Name']"));
-        first_name.sendKeys("Thuy");
+        first_name.sendKeys( "Thuy");
         WebElement last_name = driver.findElement(By.cssSelector("[type='text'][placeholder='Last Name']"));
         last_name.sendKeys("Hien");
         WebElement address = driver.findElement(By.cssSelector("#basicBootstrapForm > div:nth-child(2) > div > textarea"));

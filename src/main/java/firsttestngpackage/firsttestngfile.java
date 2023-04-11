@@ -1,4 +1,4 @@
-package firsttestngpackage;
+package main.java.firsttestngpackage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
