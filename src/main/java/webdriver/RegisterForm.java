@@ -1,4 +1,4 @@
-package main.java.webdriver;
+package webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,6 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class RegisterForm {
     public static void main(String[] args) {
@@ -27,10 +31,23 @@ public class RegisterForm {
         gender.click();
         WebElement hobbies = driver.findElement((By.xpath("//*[@id=\"checkbox2\"]")));
         hobbies.click();
-        WebElement languages = driver.findElement(By.xpath("//*[@id=\"msdd\"]"));
-        Actions action = new Actions(driver);
-        action.click(languages).build().perform();
-        Select dropdown = new Select(languages);
-        dropdown.selectByVisibleText("English");
+        //
+
+
+        WebElement input = driver.findElement(By.xpath("//*[@id=\"msdd\"]"));
+        input.click();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        WebElement dropdown = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[7]/div/multi-select/div[2]"));
+        Select select = new Select(dropdown);
+        select.selectByVisibleText("English");
+        dropdown.click();
+
+
+       // Actions action = new Actions(driver);
+//        action.click(languages).build().perform();
+//        Select dropdown = new Select(languages);
+        //dropdown.selectByVisibleText("English");
+
     }
 }
+

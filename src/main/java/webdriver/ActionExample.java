@@ -1,4 +1,4 @@
-package main.java.webdriver;
+package webdriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
