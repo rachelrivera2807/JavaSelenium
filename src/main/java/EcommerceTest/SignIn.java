@@ -266,6 +266,6 @@ public class SignIn {
     @AfterClass
     public void tearDown() {
         // Quit the WebDriver instance
-        // driver.quit();
+         driver.quit();
     }
 }

@@ -117,6 +117,6 @@ public class ResetPassword {
     @AfterClass
     public void tearDown() {
         // Quit the WebDriver instance
-        // driver.quit();
+         driver.quit();
     }
 }

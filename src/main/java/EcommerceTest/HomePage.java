@@ -37,6 +37,6 @@ public class HomePage {
     @AfterClass
     public void tearDown() {
         // Quit the WebDriver instance
-        // driver.quit();
+         driver.quit();
     }
 }
