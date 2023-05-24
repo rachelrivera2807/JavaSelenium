@@ -1,4 +1,4 @@
-package main.java.webdriver;
+package webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +13,7 @@ public class Check_Environment {
         element = driver.findElement(By.xpath("//input[@name='email']"));
         element.sendKeys("abc@gmail.com");
         element = driver.findElement(By.xpath("//input[@name='pass']"));
-        element.sendKeys("bcdedit");
+        element.sendKeys("bcdedat");
         WebElement button = driver.findElement(By.xpath("//input[@name='login']"));
         button.click();
 
